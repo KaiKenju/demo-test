@@ -65,12 +65,10 @@ class GymManager:
             new_list5.append(customer.date)
 
         arr = np.array(new_list1)
-        c = 0
         if n in arr:
             print(f"| {'Customer ID': <10} | {'Customer Name': <20} | {'DOB': <10} | {'Phone:' :<10} | {'Join Date': <10} |")
             print("-" * 77)
             for i in range(0,len(new_list1)):
-                c=c+1
                 # ['hiep' ,'hieu' ,'hiep']
                 if n == new_list1[i]: #hieu = 2
                     print(f"| {new_list2[i]:11} | {new_list1[i]:20} | {new_list3[i]:10} | {new_list4[i]:10} | {new_list5[i]:10} |")    
