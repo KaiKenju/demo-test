@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="retake.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retake</title>
+</head>
+<body>
+    <div class = "form-container">
+        <h2>Confusion Matrix</h2>
+        <form id = "data-form">
+            <div id="true-positive">
+                <label for = "true-positive">True Positive: </label>
+                <input type = "number" id="true-positive1" min ="0" required name="true-positive">
+            </div>
+
+            <div id="false-negative">
+                <label for = "false-negative">False Negative: </label>
+                <input type = "number" id="false-negative1" min ="0" required name="false-negative">
+            </div>
+
+            <div id="false-positive">
+                <label for = "false-positive">False Positive: </label>
+                <input type = "number" id="false-positive1" min ="0" required name="false-positive">
+            </div>
+
+            <div id="true-negative">
+                <label for = "true-negative">True Negative: </label>
+                <input type = "number" id="true-negative1" min ="0" required name="true-negative">
+            </div>
+
+            <button type="button" id="submit_btn">Submit</button>
+            <button type="button" id="display_btn">Display</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    
+    <script src="retake.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Validation Form</title>
+  <link rel="stylesheet" type="text/css" href="retake.css">
+</head>
+<body>
+  <form id="dataForm">
+    <div id="true-positive">
+      <label for="truePositive">True Positive:</label>
+      <input type="text" id="truePositive" name="truePositive"><br>
+    </div>
+
+    <div id="false-negative">
+      <label for="falseNegative">False Negative:</label>
+      <input type="text" id="falseNegative" name="falseNegative"><br>
+    </div>
+    <div id="false-positive">
+      <label for="falsePositive">False Positive:</label>
+      <input type="text" id="falsePositive" name="falsePositive"><br>
+    </div>
+
+    <div id="true-negative">
+      <label for="trueNegative">True Negative:</label>
+      <input type="text" id="trueNegative" name="trueNegative"><br>
+    </div>
+
+    <input type="button" value="Submit" onclick="validateData()">
+    <input type="button" value="Display" onclick="displayData()">
+  </form>
+
+  <div id="result"></div>
+  <script src="retake.js"></script>
+</body>
+</html>
